@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row g-0 container-body shadow">
+        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+        <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                            <h3 class="login-heading mb-4">{{title}}</h3>
+                            <div class="form-floating mb-3">
+                                <label class="form-label">Username</label>
+                                <input id="username" type="text" class="form-control" placeholder="Your username"
+                                    [(ngModel)]="user.username">
+                            </div>
+                            <div class="form-floating mb-3">
+                                <label class="form-label">Password</label>
+                                <input id="password" type="password" class="form-control" placeholder="Your password"
+                                    [(ngModel)]="user.password">
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                                <label class="form-check-label" for="rememberPasswordCheck">
+                                    Remember password
+                                </label>
+                            </div>
+
+                            <div class="d-grid">
+                                <button id="button" class="btn btn-primary btn-lg" type="button" (click)="login()">Sign
+                                    In</button>
+                                <div class="text-center">
+                                    <a class="small" href="#">Forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
