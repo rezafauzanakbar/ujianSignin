@@ -27,3 +27,12 @@
     background-color: white;
     border-radius: 20px;
 }
+
+a{
+    text-decoration: none;
+}
+
+#button {
+    background-color: rgb(81, 224, 81);
+    border: none;
+}
